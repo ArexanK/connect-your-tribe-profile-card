@@ -1,6 +1,11 @@
 // Importeer express uit de node_modules map
 import express from 'express'
 
+const url = 'https://whois.fdnd.nl/api/v1/member/arexan-kheyrdoon'
+const data = await fetch(url).then((response) => response.json())
+
+// console.log(data);
+
 // Maak een nieuwe express app aan
 const app = express()
 
@@ -12,9 +17,9 @@ app.set('views', './views')
 app.use(express.static('public'))
 
 // Maak een route voor de index
-app.get('/', function (req, res) {
-  // res.send('Hello World!')
-  res.render('index')
+app.get('/', function (req, res) { // get= een bezoeker 
+  // res.send('Hello World!') 
+  res.render('index', data) // render= genereren van een pagina
 })
 
 // Stel het poortnummer in waar express op gaat luisteren

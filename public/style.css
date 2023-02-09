@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
 }
+
 body {
   width: 100vw;
   height: 100vh;
@@ -13,7 +14,7 @@ body {
   background: rgba(188, 105, 138, 0.5);
   background-image: radial-gradient(circle at bottom left, rgba(255, 255, 0, 0.9), rgba(255, 255, 0, 0) 70%),
     radial-gradient(circle at top left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70%),
-    radial-gradient(circle at center right, rgba(255, 0, 255, 0.8), rgba(255, 0, 255, 0) 50%);
+    radial-gradient(circle at center right, rgba(255, 206, 247, 0.966), rgba(255, 0, 255, 0) 50%);
   background-size: 200% 200%;
   animation: movement 30s ease infinite alternate-reverse;
 }
@@ -22,27 +23,32 @@ body {
   0% {
     background-position: 0% 0%;
   }
+
   25% {
     background-position: 50% 0%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   75% {
     background-position: 50% 100%;
   }
+
   100% {
     background-position: 100% 100%;
   }
 }
 
-article {
+/* article {
   padding: 1rem;
   width: 40vw;
   height: 22vw;
-  color: white;
-
-  /* From https://css.glass */
+  color: white; */
+/* 
+  From https://css.glass */
+article {
   background: rgba(255, 255, 255, 0.06);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -53,4 +59,99 @@ article {
 
 h1 {
   text-align: center;
+}
+
+h1,
+em {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+h3 {
+  margin: 10px 0;
+}
+
+h6 {
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+
+}
+
+.card-container {
+  background-color: #ddd8d0;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #000000;
+  padding-top: 30px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.card-container .pro {
+  color: #000;
+  background-color: #803030;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card-container .round {
+  border: 1px solid #b6806a;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+button.primary {
+  background-color: #ddd8d0;
+  border: 1px solid #803030;
+  border-radius: 3px;
+  color: #000000;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+button.primary.ghost {
+  background-color: transparent;
+  color: #080808;
+}
+
+.skills {
+  background-color: #b6806a;
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills ul li {
+  border: 1px solid #ddd8d0;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
 }
