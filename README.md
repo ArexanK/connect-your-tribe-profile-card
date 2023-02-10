@@ -15,8 +15,9 @@
 
 ## Beschrijving
 
- Voor deze opdracht heb ik opnieuw een profile card gemaakt met Node.js. Hierdoor kan je gegevens op 1 plek aanpassen. Design wil ik nog aanpassen en nog interactie toevoegen 
+Voor deze opdracht heb ik opnieuw een profile card gemaakt met Node.js. Hierdoor kan je gegevens op 1 plek aanpassen. Design wil ik nog aanpassen en nog interactie toevoegen 
 
+https://comfortable-zipper-crow.cyclic.app/
 
 ## Kenmerken
 - HTML
