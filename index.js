@@ -1,8 +1,9 @@
 // Importeer express uit de node_modules map
 import express from 'express'
 
-const url = 'https://whois.fdnd.nl/api/v1/member/arexan-kheyrdoon'
-const data = await fetch(url).then((response) => response.json())
+const url = 'https://whois.fdnd.nl/api/v1/member/arexan-kheyrdoon' // url in const: 
+const data = await fetch(url).then((response) => response.json()) // await fetch: wachten tot info van json file wordt gehaald
+//response.json: respinse is in json file geplaatst
 
 // console.log(data);
 

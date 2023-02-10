@@ -62,8 +62,8 @@ h1 {
 }
 
 h1,
-em {
-  color: rgb(255, 255, 255);
+h2 em {
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
@@ -74,12 +74,11 @@ em {
 
 
 
-
-h3 {
+h1 {
   margin: 10px 0;
 }
 
-h6 {
+h3 {
   margin: 5px 0;
   text-transform: uppercase;
 }
