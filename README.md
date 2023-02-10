@@ -15,18 +15,13 @@
 
 ## Beschrijving
 
+ Voor deze opdracht heb ik opnieuw een profile card gemaakt met Node.js. Hierdoor kan je gegevens op 1 plek aanpassen. Design wil ik nog aanpassen en nog interactie toevoegen 
 
-
-
-
-
-
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+- HTML
+- CSS
+- Node 
 
 ## Installatie
 
