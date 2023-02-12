@@ -1,7 +1,8 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Profile Card
-![C262A1D0-7808-4270-9B31-E1072F5BF82E](https://user-images.githubusercontent.com/94745953/218074281-4a9e5467-7f77-429f-a714-c54a72404c6f.jpeg)
+<img width="877" alt="Screenshot 2023-02-12 at 19 20 03" src="https://user-images.githubusercontent.com/94745953/218329449-2a8861e0-a473-4372-aea4-e9eb1719a516.png">
+
 
 
 ## Inhoudsopgave
