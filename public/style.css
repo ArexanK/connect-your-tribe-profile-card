@@ -1,156 +1,99 @@
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  font-family: Helvetica, Arial, sans-serif;
+  background: #fefce8;
+  font-family: 'Inter var', sans-serif;
+  font-feature-settings: 'cv11';
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
-  background: rgba(188, 105, 138, 0.5);
-  background-image: radial-gradient(circle at bottom left, rgba(255, 255, 0, 0.9), rgba(255, 255, 0, 0) 70%),
-    radial-gradient(circle at top left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70%),
-    radial-gradient(circle at center right, rgba(255, 206, 247, 0.966), rgba(255, 0, 255, 0) 50%);
-  background-size: 200% 200%;
-  animation: movement 30s ease infinite alternate-reverse;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-@keyframes movement {
-  0% {
-    background-position: 0% 0%;
-  }
-
-  25% {
-    background-position: 50% 0%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  75% {
-    background-position: 50% 100%;
-  }
-
-  100% {
-    background-position: 100% 100%;
-  }
-}
-
-/* article {
-  padding: 1rem;
-  width: 40vw;
-  height: 22vw;
-  color: white; */
-/* 
-  From https://css.glass */
-article {
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.8px);
-  -webkit-backdrop-filter: blur(5.8px);
-  border: 1px solid rgba(255, 255, 255, 0.27);
-}
-
-h1 {
-  text-align: center;
-}
-
-h1,
-h2 em {
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-}
-
-
-
-
-
-
-
-
-h1 {
-  margin: 10px 0;
-}
-
-h3 {
-  margin: 5px 0;
-  text-transform: uppercase;
-}
-
-p {
-  font-size: 14px;
-  line-height: 21px;
-
-}
-
-.card-container {
-  background-color: #ddd8d0;
-  border-radius: 5px;
-  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
-  color: #000000;
-  padding-top: 30px;
+.profile-card {
   position: relative;
-  width: 350px;
-  max-width: 100%;
-  text-align: center;
+  border: 2px solid #000;
+  border-radius: 1rem;
+  background: #fff;
+  width: 300px;
 }
 
-.card-container .pro {
-  color: #000;
-  background-color: #803030;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 3px 7px;
+.profile-card::before,
+.profile-card::after {
+  content: '';
   position: absolute;
-  top: 30px;
-  left: 30px;
+  inset: 0;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 1rem;
+  z-index: -1;
+  transition: transform 200ms ease-out;
 }
 
-.card-container .round {
-  border: 1px solid #b6806a;
-  border-radius: 50%;
-  padding: 7px;
+.profile-card:hover::before {
+  transform: rotate(-3deg) scale(1.02) translate(-1%);
 }
 
-button.primary {
-  background-color: #ddd8d0;
-  border: 1px solid #803030;
-  border-radius: 3px;
-  color: #000000;
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  padding: 10px 25px;
+.profile-card:hover::after {
+  transform: rotate(-6deg) scale(1.02) translate(-1%);
+  z-index: -2;
+  transition-delay: 100ms;
 }
 
-button.primary.ghost {
-  background-color: transparent;
-  color: #080808;
+.profile-card__avatar {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 2px solid #000;
+  object-fit: cover;
+  box-shadow: 0 2px 0 #000;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  border-radius: 1rem;
 }
 
-.skills {
-  background-color: #b6806a;
-  text-align: left;
-  padding: 15px;
-  margin-top: 30px;
+.profile-card__bio {
+  background: #fef9c3;
+  padding: 1rem;
+  border-bottom: 2px dashed #000;
+  text-align: center;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
 }
 
-.skills ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.profile-card__bio-name {
+  font-size: 1.25em;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
 }
 
-.skills ul li {
-  border: 1px solid #ddd8d0;
-  border-radius: 2px;
+.profile-card__bio-title {
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.profile-card__links {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-card__links-button {
+  padding: 1rem;
   display: inline-block;
-  font-size: 12px;
-  margin: 0 7px 7px 0;
-  padding: 7px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  color: #000;
+  transition: box-shadow 200ms ease;
+  text-decoration: none;
+}
+
+.profile-card__links-button:hover {
+  box-shadow: -3px 3px 0 #000;
 }

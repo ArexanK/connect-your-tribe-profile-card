@@ -1,23 +1,48 @@
 <%- include('./partials/head') %>
 
 <article>
-  <div class="card-container">
-    <h1><%= member.name %> <%= member.surname %></h1>
-    <h2>Amsterdam, The Netherlands</h2>
-    <p><%= member.bio.html%></p>
-    <div class="buttons">
-      <button class="primary">Message</button>
-      <button class="primary ghost">Website</button>
+  <div class="profile-card">
+    <img
+      src="/public/IMG_1665kopiëren.jpg"
+      alt="Avatar Image"
+      class="profile-card__avatar"
+    />
+    <div class="profile-card__bio">
+      <h1 class="profile-card__bio-name">
+        <%= member.name %> <%= member.surname %>
+      </h1>
+      <h2 class="profile-card__bio-title">Frontend Developer& Designer</h2>
+      <p><%= member.bio.html%></p>
     </div>
-    <div class="skills">
-      <h3>Skills</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node</li>
-      </ul>
+    <div class="profile-card__links">
+      <a
+        href="https://github.com/ArexanK"
+        class="profile-card__links-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub</a
+      >
+      <a
+        href="https://twitter.com/Arex_dev"
+        class="profile-card__links-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Twitter</a
+      >
+      <a
+        href=""
+        class="profile-card__links-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >
+      <a
+        href=""
+        class="profile-card__links-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Figma</a
+      >
     </div>
   </div>
 </article>
